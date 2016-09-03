@@ -81,4 +81,13 @@
 #define HBPG_META_TABLECOL              6
 #define HBPG_META_LEN_                  6
 
+/* libpq-fe.h
+ * PGPing - The ordering of this enum should not be altered because the
+ * values are exposed externally via pg_isready. For version 9
+*/
+#define PQPING_OK           0
+#define PQPING_REJECT       1
+#define PQPING_NO_RESPONSE  2
+#define PQPING_NO_ATTEMPT   3
+
 #endif
